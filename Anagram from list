@@ -1,1 +1,14 @@
+s1=input("Enter main string: ")
+s2=input("target one: ")
+f=0
+for i in s2:
+    if(i not in s1):
+        f=1
+        break
+if(f==0 and len(s1)==len(s2)):
+   print("Anagram")
+else:
+    print("Not Anagram")
+        
+    
 
