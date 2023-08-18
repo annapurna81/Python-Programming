@@ -1,0 +1,12 @@
+s=input("Enter the string: ")
+R=""
+for i in s:
+    R=i+R
+l=len(s)
+for i in range(0,l):
+    if(s[i]!=R[i]):
+        break
+if(i==l-1):
+    print("Palindrome")
+else:
+    print("Not Palindrome")
