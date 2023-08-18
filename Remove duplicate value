@@ -1,0 +1,5 @@
+s1="ANNAPURNA"
+R=""
+for i in s1:
+    R=i+R
+print(R)    
