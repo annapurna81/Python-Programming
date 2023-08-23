@@ -1,0 +1,5 @@
+r=float(input("Enter the radius: "))
+print("Area is",float(3.14*r**2))
+
+
+
