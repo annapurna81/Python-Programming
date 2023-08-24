@@ -1,0 +1,15 @@
+def generate_fibonacci(n, initial_numbers):
+    fibonacci_series = initial_numbers[:]
+    while len(fibonacci_series) < n:
+        next_num = sum(fibonacci_series[-len(initial_numbers):])
+        fibonacci_series.append(next_num)
+    return fibonacci_series
+
+# Example list of initial numbers
+initial_numbers = [2, 5]
+
+# Generate Fibonacci series using the initial numbers
+fibonacci_list = generate_fibonacci(10, initial_numbers)
+
+print("Fibonacci series using initial numbers:", initial_numbers)
+print(fibonacci_list)
