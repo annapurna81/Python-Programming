@@ -1,0 +1,12 @@
+def AR(a=None, b=None):
+    if(a==None and b==None):
+        print("point only")
+    if(b==None and a != None):
+        print("area of circle")
+        R=a*a*3.17
+        print(R)
+    if(a!=None and b!=None):
+        print("Area of rectangle: ",a*b)
+AR()
+AR(5)
+AR(4,5)
